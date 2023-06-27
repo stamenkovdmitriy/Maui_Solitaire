@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_CSS.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="shadow-border" TargetType="Border">
+                <Setter Property="Shadow" >
+                    <Setter.Value>
+                        <Shadow
+                            Brush="gray"
+                            Offset="5,5"
+                            Radius="10"
+                            Opacity=".8"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    
+    <FlexLayout
+                BackgroundColor="#1D2A2A">
+        
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Border 
+                    Grid.Column="0"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"                    
+                    Margin="20"
+                    HeightRequest="150"
+                    WidthRequest="300"
+                    VerticalOptions="Center"
+                    Style="{StaticResource shadow-border}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30" />
+                    </Border.StrokeShape>
+                
+                    <StackLayout>
+                        
+                        <Label x:Name="_timeLabel" 
+                            FontSize="45"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            TextColor="Wheat" >
+                        </Label>
+                        <BoxView 
+                            HeightRequest="1" 
+                            Color="Gray" 
+                            Margin="10" /> 
+                        <Button 
+                            Text="OPEN"
+                            BackgroundColor="#1D2A2A" 
+                            BorderColor="Wheat"
+                            TextColor="Wheat"
+                            WidthRequest="140"
+                            HeightRequest="40">
+                            <Button.Triggers>
+                                <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                    <Setter Property="TextColor" Value="Black" />
+                                    <Setter Property="WidthRequest" Value="130" />
+                                </Trigger>
+                            </Button.Triggers>
+                        </Button>                   
+                    </StackLayout>               
+                </Border>
+        </VerticalStackLayout>
+        
+                
+        <BoxView
+                    Grid.Column="1"
+                    WidthRequest="1"
+                    Color="Gray" 
+                    Margin="10" />
+        
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30" />
+                    </Border.StrokeShape>
+                        <StackLayout >
+                            <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                            </Label>
+                            <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                            <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                                <Button.Triggers>
+                                    <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                        <Setter Property="TextColor" Value="Black" />
+                                        <Setter Property="WidthRequest" Value="230" />
+                                    </Trigger>
+                                </Button.Triggers>
+                            </Button>
+                        
+                        </StackLayout>
+                </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+        </VerticalStackLayout>
+
+        <BoxView
+                    Grid.Column="1"
+                    WidthRequest="1"
+                    Color="Gray" 
+                    Margin="10" />
+
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+        </VerticalStackLayout>
+
+        <BoxView
+                    Grid.Column="1"
+                    WidthRequest="1"
+                    Color="Gray" 
+                    Margin="10" />
+
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+            
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+            <Border 
+                    Grid.Column="2"
+                    Stroke="Gray" 
+                    BackgroundColor="#1D2A2A"
+                    WidthRequest="300"
+                    HeightRequest="160"
+                    Margin="20"
+                    Style="{StaticResource shadow-border}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="30" />
+                </Border.StrokeShape>
+                <StackLayout >
+                    <Label Text="CONTENT"
+                                FontSize="45"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                TextColor="Wheat" >
+                    </Label>
+                    <BoxView 
+                                HeightRequest="1" 
+                                Color="Gray" 
+                                Margin="10" />
+                    <Button 
+                                Text="OPEN"
+                                BackgroundColor="#1D2A2A" 
+                                BorderColor="Wheat"
+                                TextColor="Wheat"
+                                WidthRequest="240"
+                                HeightRequest="40">
+                        <Button.Triggers>
+                            <Trigger Property="IsPressed" Value="True" TargetType="Button">
+                                <Setter Property="TextColor" Value="Black" />
+                                <Setter Property="WidthRequest" Value="230" />
+                            </Trigger>
+                        </Button.Triggers>
+                    </Button>
+
+                </StackLayout>
+            </Border>
+        </VerticalStackLayout>
+
+    </FlexLayout>
+                  
+</ContentPage>
