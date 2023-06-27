@@ -1,1 +1,1 @@
-# Maui_CSS
+# Playing adaptive solitaire with elements in .net MAUI
